@@ -14,7 +14,7 @@
           <SPAN STYLE="font-size:11px;font-family:Tahoma;color:black;font-weight:bold">Enviar Comentario</SPAN>
           </CENTER>
           <p>
-          <form class="form" NAME="form" ACTION="nuevoComentario.php" METHOD="post">
+          <form class="form" NAME="form" ACTION="nuevoComentario.php" METHOD="POST">
           <font face="Comic Sans MS" size="3">
           <INPUT TYPE="hidden" NAME="id" VALUE="<?php echo $id; ?>">
           Nick : <INPUT TYPE="text" NAME="nick" SIZE=20 MAXLENGTH=20>
