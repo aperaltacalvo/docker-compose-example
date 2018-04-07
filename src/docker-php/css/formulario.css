@@ -1,0 +1,48 @@
+form
+{
+   padding:2px;
+   cursor:pointer;
+   display:block;
+   width:290px;
+   margin: 0 auto;
+   text-align:left;
+}
+body{
+	color: 2D43AE;
+	background-color:white;
+	text-align: center;
+	margin-top: all;
+}
+header{
+	padding-bottom: 130px;
+}  
+fieldset{
+	border-color: 2D43AE;
+	height:130px;
+}
+#button{
+    background-color: 2D43AE; 
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+#button:hover{
+	background-color: white;
+	border: solid;
+	border-color: 2D43AE;
+    color: blue;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+#textboxid
+{
+    height:200px;
+    font-size:14pt;
+}

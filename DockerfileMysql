@@ -1,0 +1,14 @@
+FROM mysql:latest
+USER root
+COPY /src/database/sqlscript.sql /database/sqlscript.sql
+COPY /src/database/docker-php-ext-mysqli.ini /usr/local/etc/php/conf.d/docker-php-ext-mysqli.ini
+RUN touch /var/run/mysqld/mysqld.sock
+RUN touch /var/run/mysqld/mysqld.pid
+RUN chown -R mysql:mysql /var/run/mysqld/mysqld.sock
+RUN chown -R mysql:mysql /database/sqlscript.sql
+RUN chown -R mysql:mysql /var/run/mysqld/mysqld.pid
+RUN chmod -R 644 /var/run/mysqld/mysqld.sock
+RUN chmod -R 644 /var/run/mysqld/mysqld.pid
+RUN chmod -R 644 /database/sqlscript.sql
+USER mysql
+EXPOSE 3306
