@@ -29,10 +29,9 @@
            $con =  intval($rowCom2["id"]);
            $con++;
            $idNoticia = intval($_POST["id"]);
-           $comentarioNoticia = $_POST["comentario"];
-           $nickNuevo = $_POST["nick"];
+           $comentarioNoticia = htmlspecialchars($_POST["comentario"]);
+           $nickNuevo = htmlspecialchars($_POST["nick"]);
            $queryInsert = "insert into comentarios(id,id_noticia,nick,comentario) VALUES(".$con.", ".$idNoticia.",'".$nickNuevo."','".$comentarioNoticia."');";
-           echo $queryInsert;
             mysqli_query($conn,$queryInsert) or die(mysqli_error($conn));
 
            echo "Comentario Enviado Con Exito. Espere Unos Segundos…";

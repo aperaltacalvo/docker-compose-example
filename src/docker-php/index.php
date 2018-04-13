@@ -19,7 +19,13 @@
           <INPUT TYPE="hidden" NAME="id" VALUE="<?php echo $id; ?>">
           Nick : <INPUT TYPE="text" NAME="nick" SIZE=20 MAXLENGTH=20>
           <BR>
-          Comentario: <INPUT id="textboxid" TYPE="text" NAME="comentario" SIZE=28 MAXLENGTH=250>
+          Comentario:
+                     <div class="form-group">
+                                      <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                                      <div class="col-md-8">
+                                          <textarea class="form-control" id="textboxid" name="comentario" placeholder="Escribe tu comentario" rows="7"></textarea>
+                                      </div>
+                     </div>
           </BR>
           </BR>
           <INPUT TYPE="submit" id="button" VALUE="EnviarComentario">
