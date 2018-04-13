@@ -7,11 +7,16 @@ form
    margin: 0 auto;
    text-align:left;
 }
+title{
+color: white;
+}
 body{
-	color: 2D43AE;
+	color: white;
 	background-color:white;
 	text-align: center;
 	margin-top: all;
+	background-position: center 0%;
+	background-repeat: no-repeat;
 }
 header{
 	padding-bottom: 130px;
@@ -43,6 +48,7 @@ fieldset{
 }
 #textboxid
 {
-    height:200px;
+    height:100px;
+    width:400px;
     font-size:14pt;
 }

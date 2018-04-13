@@ -3,43 +3,12 @@
 <link rel="stylesheet" type="text/css" href="css/formulario.css"/>
 </head>
         <header>
-            <!--img src="images/platano.jpg" style="float: left" height="130" width="180"/-->
-            <!--img src="images/lobo.jpg" style="float: right" height="130" width="180"/-->
-            <title> Blog de viajes por el mundo </title>
+            <title> Blog de comentarios </title>
         </header>
-    <body>
-              <SPAN STYLE="font-size:11px;font-family:Tahoma;color:blue;font-weight:bold">Blog de viajes</SPAN>
-
-    <CENTER>
-          <SPAN STYLE="font-size:11px;font-family:Tahoma;color:black;font-weight:bold">Enviar Comentario</SPAN>
-          </CENTER>
-          <p>
-          <form class="form" NAME="form" ACTION="nuevoComentario.php" METHOD="POST">
-          <font face="Comic Sans MS" size="3">
-          <INPUT TYPE="hidden" NAME="id" VALUE="<?php echo $id; ?>">
-          Nick : <INPUT TYPE="text" NAME="nick" SIZE=20 MAXLENGTH=20>
-          <BR>
-          Comentario:
-                     <div class="form-group">
-                                      <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
-                                      <div class="col-md-8">
-                                          <textarea class="form-control" id="textboxid" name="comentario" placeholder="Escribe tu comentario" rows="7"></textarea>
-                                      </div>
-                     </div>
-          </BR>
-          </BR>
-          <INPUT TYPE="submit" id="button" VALUE="EnviarComentario">
-          </font>
-          </form>
-      <CENTER>
-      <TABLE CELLSPACING=1 CELLPADDING=1 WIDTH=300 BORDER=0 STYLE="border:1px solid black">
-      <TR>
-      <TD BGCOLOR="#FAFAFA">
-      <CENTER>
-      <SPAN STYLE="font-size:11px;font-family:Tahoma;color:black;font-weight:bold">Comentarios De Los Usuarios</SPAN>
-      </CENTER>
-      </TD>
-      </TR>
+    <body background="images/lobo.jpg" >
+              <SPAN STYLE="font-size:21px;font-family:Tahoma;color:white;font-weight:bold">Comentarios De Los Usuarios</SPAN>
+ <CENTER>
+      <TABLE CELLSPACING=1 CELLPADDING=1 WIDTH=600 BORDER=0 STYLE="border:1px solid black">
 
       <TR>
       <TD HEIGHT=1 BGCOLOR=black>
@@ -82,6 +51,25 @@
       </TR>
       </TABLE>
       </CENTER>
+
+          <p>
+          <form class="form" NAME="form" ACTION="nuevoComentario.php" METHOD="POST">
+          <font face="Comic Sans MS" size="3">
+          <INPUT TYPE="hidden" NAME="id" VALUE="<?php echo $id; ?>">
+          Nick : <INPUT TYPE="text" NAME="nick" SIZE=20 MAXLENGTH=20>
+          <BR>
+          Comentario:
+                     <div class="form-group">
+                                      <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                                      <div class="col-md-8">
+                                          <textarea class="form-control" id="textboxid" name="comentario" placeholder="Escribe tu comentario" rows="4"></textarea>
+                                      </div>
+                     </div>
+          </BR>
+          </BR>
+          <INPUT TYPE="submit" id="button" VALUE="EnviarComentario">
+          </font>
+          </form>
 
 
     </body>

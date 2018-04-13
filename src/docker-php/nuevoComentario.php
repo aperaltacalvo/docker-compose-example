@@ -6,10 +6,10 @@
         <header>
             <!--img src="images/platano.jpg" style="float: left" height="130" width="180"/-->
             <!--img src="images/lobo.jpg" style="float: right" height="130" width="180"/-->
-                        <title> Blog de viajes por el mundo </title>
+                        <title> Nuevo comentario </title>
 
         </header>
-        <body>
+        <body background="images/lobo.jpg">
         enviando comentario
            <?php
 
