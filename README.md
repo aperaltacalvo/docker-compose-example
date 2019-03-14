@@ -1,7 +1,8 @@
 To run this web app, you only need to execute:
 
-docker-compose up
-docker exec -i mysqlphp mysql -uroot -phola < sqlscript.sql
+docker-compose up --build
+
+
 To access to the web app you only need to access to:
 
 

@@ -12,3 +12,4 @@ RUN chmod -R 644 /var/run/mysqld/mysqld.pid
 RUN chmod -R 644 /database/sqlscript.sql
 USER mysql
 EXPOSE 3306
+ADD /src/database/sqlscript.sql /docker-entrypoint-initdb.d/
