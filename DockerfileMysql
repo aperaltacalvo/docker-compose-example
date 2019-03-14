@@ -1,4 +1,4 @@
-FROM mysql:latest
+FROM mysql:5.7.25
 USER root
 COPY /src/database/sqlscript.sql /database/sqlscript.sql
 COPY /src/database/docker-php-ext-mysqli.ini /usr/local/etc/php/conf.d/docker-php-ext-mysqli.ini

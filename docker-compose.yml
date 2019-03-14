@@ -2,7 +2,7 @@ version: '2'
 
 services:
   database:
-    image: mysql:latest
+    image: mysql:5.7.25
     build:
       context: ./
       dockerfile: DockerfileMysql
