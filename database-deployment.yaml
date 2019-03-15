@@ -1,0 +1,27 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: database
+spec:
+  replicas: 1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        io.kompose.service: database
+    spec:
+      containers:
+      - env:
+        - name: MYSQL_ROOT_PASSWORD
+          value: hola
+        - name: GET_HOSTS_FROM
+          value: dns
+        image: database
+        name: database
+        ports:
+        - containerPort: 3306
+        resources: {}
+        imagePullPolicy: Never
+      restartPolicy: Always
+status: {}

@@ -20,7 +20,7 @@
       <SPAN STYLE="font-size:11px;font-family:Tahoma;color:black;">
 
       <?php
-        $servername = "mysqlphp";
+        $servername = "database";
         $username = "admin";
         $password = "admin";
         $dbname = "mi_base_de_datos";
