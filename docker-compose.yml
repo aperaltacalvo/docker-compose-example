@@ -2,21 +2,19 @@ version: '2'
 
 services:
   database:
-    image: mysql:5.7.25
     build:
       context: ./
       dockerfile: DockerfileMysql
-    container_name: mysqlphp
+    container_name: database
     ports:
       - "3306:3306"
     environment:
       MYSQL_ROOT_PASSWORD: hola
   webservice:
-    image: php:7.1-apache
     build:
       context: ./
       dockerfile: Dockerfile
-    container_name: docker-php
+    container_name: webservice
     ports:
       - "8080:80"
     links:
