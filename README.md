@@ -15,3 +15,22 @@ docker-compose down --rmi all --volumes
 
 
 
+To execute a kubernetes deployment:
+
+Install minikube or use a kubernetes installation provided
+
+In case of minikube, run minikube start
+
+kubectl create -f database-deployment.yaml,database-service.yaml,webservice-deployment.yaml,webservice-service.yaml,webservice-ingress.yaml
+
+minikube dashboard show you the cluster status in kubernetes dashboard
+
+
+to stop everything
+
+
+kubectl delete -f database-deployment.yaml,database-service.yaml,webservice-deployment.yaml,webservice-service.yaml,webservice-ingress.yaml
+
+minikube stop
+
+minikube delete
