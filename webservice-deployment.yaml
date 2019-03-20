@@ -1,29 +1,20 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
 kind: Deployment
 metadata:
-  name: webservice
+  name: webservice-deployment
 spec:
-  replicas: 1
-  strategy: {}
+  selector:
+    matchLabels:
+      app: webservice
+  replicas: 1 # tells deployment to run 1 pods matching the template
   template:
     metadata:
-      creationTimestamp: null
       labels:
-        io.kompose.service: webservice
+        app: webservice
     spec:
       containers:
-      - env:
-        - name: GET_HOSTS_FROM
-          value: dns
+      - name: webservice
         image: webservice
-        name: webservice
+        imagePullPolicy: Never
         ports:
         - containerPort: 80
-        resources: {}
-        imagePullPolicy: Never
-      restartPolicy: Always
-      hostAliases:
-        - ip: "127.0.0.1"
-          hostnames:
-          - "database"
-status: {}

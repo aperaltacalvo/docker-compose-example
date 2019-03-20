@@ -1,13 +1,12 @@
-apiVersion: v1
 kind: Service
+apiVersion: v1
 metadata:
   name: webservice
 spec:
-  ports:
-  - name: webservice
-    port: 80
-    targetPort: 80
   selector:
-    app: myapp
-    tier: webservice
+    app: webservice
+  ports:
+  - protocol: TCP
+    port: 8080
+    targetPort: 80
 

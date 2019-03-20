@@ -1,27 +1,23 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
 kind: Deployment
 metadata:
-  name: database
+  name: database-deployment
 spec:
-  replicas: 1
-  strategy: {}
+  selector:
+    matchLabels:
+      app: database
+  replicas: 1 # tells deployment to run 1 pods matching the template
   template:
     metadata:
-      creationTimestamp: null
       labels:
-        io.kompose.service: database
+        app: database
     spec:
       containers:
-      - env:
-        - name: MYSQL_ROOT_PASSWORD
-          value: hola
-        - name: GET_HOSTS_FROM
-          value: dns
+      - name: database
         image: database
-        name: database
+        imagePullPolicy: Never
         ports:
         - containerPort: 3306
-        resources: {}
-        imagePullPolicy: Never
-      restartPolicy: Always
-status: {}
+        env:
+        - name: MYSQL_ROOT_PASSWORD
+          value: hola
