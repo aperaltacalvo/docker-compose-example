@@ -6,7 +6,7 @@ spec:
   selector:
     app: webservice
   ports:
-  - protocol: TCP
+  - name: port
+    protocol: TCP
     port: 8080
-    targetPort: 80
-
+    targetPort: 8080
