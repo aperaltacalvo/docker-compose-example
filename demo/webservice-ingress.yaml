@@ -1,0 +1,12 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: webservice-ingress
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /docker-php/
+        backend:
+          serviceName: webservice
+          servicePort: 8080

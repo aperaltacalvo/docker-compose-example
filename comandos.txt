@@ -1,0 +1,500 @@
+  392  docker rmi $(docker images -q)
+  393  docker ps -a
+  394  docker volume
+  395  docker volume ls
+  396  docker volume prune
+  397  docker ps -a
+  398  ll
+  399  pwd
+  400  ls -la
+  401  docker-compose up --build
+  402  docker-compose up --build
+  403  docker-compose down
+  404  docker rmi $(docker images -q)
+  405  docker volume prune
+  406  docker-compose up --build
+  407  docker volume prune
+  408  docker rmi $(docker images -q)
+  409  docker-compose up --build
+  410  git status
+  411  git diff DockerfileMysql 
+  412  git add DockerfileMysql 
+  413  git diff docker-compose.yml 
+  414  git checkout docker-compose.yml 
+  415  git status
+  416  git add docker-compose.yml 
+  417  git commit -m "Change mysql database to a correct version"
+  418  git push 
+  419  git status
+  420  ll
+  421  ls
+  422  docker ps -a
+  423  docker rm $(docker ps -a -q)
+  424  docker rmi $(docker images -q)
+  425  docker volume prune
+  426  docker ps -a
+  427  docker-compose up --build
+  428  docker-compose down
+  429  docker-compose up --build
+  430  docker-compose down
+  431  docker-compose up --build
+  432  docker-compose down
+  433  docker-compose up --build
+  434  docker-compose down
+  435  docker-compose up --build
+  436  docker ps -a
+  437  cd workspace/docker-compose-example/
+  438  docker exec -i mysqlphp mysql -uroot -phola < sqlscript.sql
+  439  ls
+  440  cd src/database/
+  441  docker exec -i mysqlphp mysql -uroot -phola < sqlscript.sql
+  442  docker exec -i mysqlphp mysql -uroot -phola < sqlscript.sql
+  443  docker exec -i mysqlphp mysql -uroot -padmin < sqlscript.sql
+  444  docker ps -a
+  445  docker exec -it ff bash
+  446  ls
+  447  cd ..
+  448  ls
+  449  cd docker-php/
+  450  ls
+  451  cd ..
+  452  pwd
+  453  ls
+  454  cd database/
+  455  docker exec -i mysqlphp mysql -uroot -padmin < sqlscript.sql
+  456  docker exec -i mysqlphp mysql -uroot -padmin < sqlscript.sql
+  457  docker exec -i mysqlphp mysql -uroot -phola < sqlscript.sql
+  458  docker exec -i mysqlphp mysql -uroot -phola < sqlscript.sql
+  459  docker ps -a
+  460  docker run -it fb bash
+  461  docker run -it fb bash
+  462  docker run -it mysqlphp bash
+  463  docker ps -a
+  464  docker run -it mysqlphp bash
+  465  docker run -it fb bash
+  466  docker rm $(docker ps -a -q)
+  467  docker stop aa
+  468  docker rm $(docker ps -a -q)
+  469  docker rmi $(docker images -q)
+  470  docker volume prune
+  471  ls
+  472  cd ..
+  473  ls
+  474  cd ..
+  475  ls
+  476  docker-compose up --build
+  477  docker-compose down
+  478  docker rmi $(docker images -q)
+  479  docker rm $(docker ps -a -q)
+  480  docker volume prune
+  481  docker-compose up --build
+  482  docker-compose up --build
+  483  docker-compose up --build
+  484  docker-compose down --rmi all --volumes
+  485  docker images
+  486  docker rmi $(docker images -q)
+  487  docker ps -a
+  488  docker stop 34
+  489  docker rm 34
+  490  docker ps -a
+  491  docker images
+  492  docker rmi $(docker images -q)
+  493  docker volume prune
+  494  docker ps -a
+  495  git status
+  496  git diff DockerfileMysql 
+  497  git add DockerfileMysql 
+  498  git add README.md 
+  499  git commit -m "Include sql init execution in dockerfile"
+  500  git push
+  501  cd workspace/
+  502  ls
+  503  cd docker-compose-example/
+  504  ls
+  505  history | grep kompose
+  506  pwd
+  507  kompose convert
+  508  minikube service webservice
+  509  docker ps -a
+  510  minikube ps -a
+  511  minikube ip
+  512  kubectl svc describe webservice
+  513  kubectl describe svc webservice
+  514  kubectl describe svc database
+  515  kubectl expose rc webservice --port=8080 --target-port=8080
+  516  kubectl expose webservice --port=8080 --target-port=8080
+  517  minikube service --list
+  518  minikube service list
+  519  minikube service webservice
+  520  minikube service list
+  521  minikube service webservice
+  522  minikube service list
+  523  minikube service webservice
+  524  minikube service list
+  525  kubectl delete services webservice
+  526  minikube service list
+  527  kubectl delete services database
+  528  minikube service list
+  529  minikube service webservice
+  530  minikube service list
+  531  ls
+  532  minikube service webservice
+  533  minikube status
+  534  minikube service webservice
+  535  ls
+  536  rm -rf database-deployment.yaml database-service.yaml webservice-deployment.yaml webservice-service.yaml 
+  537  ls
+  538  kompose convert
+  539  ls
+  540  kubectl create -f database-deployment.yaml database-service.yaml webservice-deployment.yaml webservice-service.yaml 
+  541  kubectl create -f database-deployment.yaml,database-service.yaml,webservice-deployment.yaml,webservice-service.yaml 
+  542  kubectl create -f database-deployment.yaml,database-service.yaml,webservice-deployment.yaml,webservice-service.yaml
+  543  minikube service list
+  544  minikube service delete database
+  545  minikube service delete database
+  546  minikube delete database
+  547  minikube service help
+  548  minikube service delete "database"
+  549  minikube service database delete
+  550  minikube database service delete
+  551  kubectl delete --all pods --namespace=default
+  552   kubectl delete --all deployments --namespace=default
+  553   kubectl delete --all services --namespace=default
+  554  kubectl create -f database-deployment.yaml,database-service.yaml,webservice-deployment.yaml,webservice-service.yaml
+  555   kubectl delete --all services --namespace=default
+  556   kubectl delete --all deployments --namespace=default
+  557  kubectl delete --all pods --namespace=default
+  558  kubectl create -f database-deployment.yaml,database-service.yaml,webservice-deployment.yaml,webservice-service.yaml
+  559  minikube service webservice
+  560  kubectl delete --all pods --namespace=default
+  561   kubectl delete --all services --namespace=default
+  562   kubectl delete --all deployments --namespace=default
+  563  ls
+  564  eval $(minikube docker-env)
+  565  docker build -t webservice .
+  566  docker images
+  567  docker build -f DockerfileMysql -t database .
+  568  docker images
+  569  kubectl create -f database-deployment.yaml,database-service.yaml,webservice-deployment.yaml,webservice-service.yaml
+  570  minikube service webservice
+  571   kubectl delete --all deployments --namespace=default
+  572   kubectl delete --all services --namespace=default
+  573  kubectl delete --all pods --namespace=default
+  574  kubectl create -f database-deployment.yaml,database-service.yaml,webservice-deployment.yaml,webservice-service.yaml
+  575  kubectl create -f database-deployment.yaml,database-service.yaml,webservice-deployment.yaml,webservice-service.yaml
+  576  kubectl delete --all pods --namespace=default
+  577   kubectl delete --all services --namespace=default
+  578   kubectl delete --all deployments --namespace=default
+  579  kubectl create -f database-deployment.yaml,database-service.yaml,webservice-deployment.yaml,webservice-service.yaml
+  580  minikube service webservice
+  581  minikube service list
+  582  kubectl get services
+  583  docker ps -a
+  584  docker exect -it 377 bash
+  585  docker ps -a
+  586  docker exec -it 37785809966b bash
+  587  curl webservice:80
+  588  curl webservice
+  589  docker ps -a
+  590  docker exec -it bc7c8432df2b bash
+  591  ls
+  592   kubectl delete --all deployments --namespace=default
+  593   kubectl delete --all services --namespace=default
+  594   kubectl delete --all pods --namespace=default
+  595  docker build -t webservice .
+  596  kubectl create -f database-deployment.yaml,database-service.yaml,webservice-deployment.yaml,webservice-service.yaml
+  597  minikube service webservice
+  598  minikube service list
+  599  curl webservice:80
+  600  ping webservice
+  601  docker ps -a
+  602  curl k8s_docker-php_webservice-66dfc46f6-dhch4_default_050c80fe-4674-11e9-9d3a-080027063b8c_0:80
+  603  curl  k8s_docker-php_webservice-66dfc46f6-dhch4_default_050c80fe-4674-11e9-9d3a-080027063b8c_0
+  604  ping  k8s_docker-php_webservice-66dfc46f6-dhch4_default_050c80fe-4674-11e9-9d3a-080027063b8c_0
+  605  curl webservice:80
+  606   kubectl delete --all pods --namespace=default
+  607   kubectl delete --all services --namespace=default
+  608   kubectl delete --all deployments --namespace=default
+  609  systemctl disable firewalld
+  610  docker images
+  611  docker tag webservice webservice:latest
+  612  docker images
+  613  kubectl create -f database-deployment.yaml,database-service.yaml,webservice-deployment.yaml,webservice-service.yaml
+  614   kubectl delete --all deployments --namespace=default
+  615   kubectl delete --all services --namespace=default
+  616   kubectl delete --all pods --namespace=default
+  617  kubectl create -f database-deployment.yaml,database-service.yaml,webservice-deployment.yaml,webservice-service.yaml
+  618  minikube service webservice
+  619  minikube service list
+  620   kubectl delete --all pods --namespace=default
+  621   kubectl delete --all services --namespace=default
+  622   kubectl delete --all volumes --namespace=default
+  623   kubectl delete --all deployments --namespace=default
+  624  minikube service list
+  625  kubectl get svc
+  626  kubectl run docker-php --image=webservice --port=80
+  627  kubectl expose deployment docker-php --type=NodePort
+  628  minikube service docker-php
+  629   kubectl delete --all deployments --namespace=default
+  630   kubectl delete --all services --namespace=default
+  631   kubectl delete --all pods --namespace=default
+  632  minikube service start
+  633  minikube service webservice
+  634  ls
+  635   kubectl delete --all pods --namespace=default
+  636   kubectl delete --all services --namespace=default
+  637   kubectl delete --all deployments --namespace=default
+  638  kubectl create -f database-deployment.yaml,database-service.yaml,webservice-deployment.yaml,webservice-service.yaml
+  639  minikube service webservice
+  640  ping 10.97.14.187
+  641  curl MacBook-Air-de-Alvaro:docker-compose-example alvaroperalta$ kubectl create -f database-deployment.yaml,database-service.yaml,webservice-deployment.yaml,webservice-service.yaml
+  642  deployment.extensions/database created
+  643  service/database created
+  644  deployment.extensions/webservice created
+  645  service/webservice created
+  646  MacBook-Air-de-Alvaro:docker-compose-example alvaroperalta$ minikube service webservice
+  647    Opening kubernetes service default/webservice in default browser...
+  648  MacBook-Air-de-Alvaro:docker-compose-example alvaroperalta$ ping 10.97.14.187
+  649  PING 10.97.14.187 (10.97.14.187): 56 data bytes
+  650  Request timeout for icmp_seq 0
+  651  Request timeout for icmp_seq 1
+  652  Request timeout for icmp_seq 2
+  653  cRequest timeout for icmp_seq 3
+  654  Request timeout for icmp_seq 4
+  655  Request timeout for icmp_seq 5
+  656                                                              
+  657  curl 10.97.14.187:80
+  658  curl 10.97.14.187:32767
+  659  VBoxManage controlvm minikube natpf1 k8s-apiserver,tcp,127.0.0.1,8443,,8443
+  660  VBoxManage controlvm minikube natpf1 k8s-dashboard,tcp,127.0.0.1,30000,,30000
+  661  kubectl config set-cluster minikube-vpn --server=https://127.0.0.1:8443 --insecure-skip-tls-verify
+  662  kubectl config set-context minikube-vpn --cluster=minikube-vpn --user=minikube
+  663  kubectl config use-context minikube-vpn
+  664  kubectl get pods
+  665  VBoxManage controlvm minikube natpf1 k8s-docker,tcp,127.0.0.1,2374,,2376
+  666  eval $(minikube docker-env)
+  667  unset DOCKER_TLS_VERIFY
+  668  export DOCKER_HOST="tcp://127.0.0.1:2374"
+  669  alias docker='docker --tls'
+  670  docker ps
+  671  curl http://127.0.0.1:30000
+  672  minikube service list
+  673  minikube status
+  674  kubectl config current-context
+  675  minikube status
+  676  brew upgrade docker-machine-driver-xhyve
+  677  minikube status
+  678  minikube service list
+  679  minikube log
+  680  minikube logs
+  681  minikube service list
+  682  minikube delete
+  683  minikube start
+  684  curl MacBook-Air-de-Alvaro:docker-compose-example alvaroperalta$ kubectl create -f database-deployment.yaml,database-service.yaml,webservice-deployment.yaml,webservice-service.yaml
+  685  kubectl create -f database-deployment.yaml,database-service.yaml,webservice-deployment.yaml,webservice-service.yaml
+  686  minikube service webservice
+  687   kubectl delete --all deployments --namespace=default
+  688   kubectl delete --all services --namespace=default
+  689   kubectl delete --all pods --namespace=default
+  690  docker images
+  691  docker images
+  692  eval $(minikube docker-env)
+  693  docker images
+  694  docker build -t webservice .
+  695  docker build -f DockerfileMysql -t webservice .
+  696  docker build -f DockerfileMysql -t database .
+  697  minikube service webservice
+  698  kubectl create -f database-deployment.yaml,database-service.yaml,webservice-deployment.yaml,webservice-service.yaml
+  699  minikube service webservice
+  700   kubectl delete --all pods --namespace=default
+  701   kubectl delete --all deployments --namespace=default
+  702   kubectl delete --all services --namespace=default
+  703  kubectl create -f database-deployment.yaml,database-service.yaml,webservice-deployment.yaml,webservice-service.yaml
+  704  minikube service webservice
+  705   kubectl delete --all services --namespace=default
+  706   kubectl delete --all deployments --namespace=default
+  707   kubectl delete --all pods --namespace=default
+  708  kubectl create -f database-deployment.yaml,database-service.yaml,webservice-deployment.yaml,webservice-service.yaml
+  709   kubectl delete --all pods --namespace=default
+  710   kubectl delete --all deployments --namespace=default
+  711   kubectl delete --all services --namespace=default
+  712  kubectl create -f database-deployment.yaml,database-service.yaml,webservice-deployment.yaml,webservice-service.yaml
+  713   kubectl delete --all services --namespace=default
+  714   kubectl delete --all deployments --namespace=default
+  715   kubectl delete --all pods --namespace=default
+  716  kubectl create -f database-deployment.yaml,database-service.yaml,webservice-deployment.yaml,webservice-service.yaml
+  717  minikube service webservice
+  718  kubectl get pods
+  719  kubectl port-fordward webservice-849fbbbf68-dctlr 80:80
+  720  kubectl port-forward webservice-849fbbbf68-dctlr 80:80
+  721  kubectl port-forward webservice-849fbbbf68-dctlr 80:8080
+  722  kubectl port-forward webservice-849fbbbf68-dctlr 80:33767
+  723  kubectl port-forward webservice-849fbbbf68-dctlr 8080:80
+  724  kubectl port-forward webservice-849fbbbf68-dctlr 8080:80 -d
+  725  kubectl port-forward webservice-849fbbbf68-dctlr 8080:80 &
+  726  kubectl port-forward database-77d8c4d959-qxjjx 3306:3306 &
+  727   kubectl delete --all deployments --namespace=default
+  728   kubectl delete --all services --namespace=default
+  729   kubectl delete --all pods --namespace=default
+  730  kubectl create -f database-deployment.yaml,database-service.yaml,webservice-deployment.yaml,webservice-service.yaml
+  731  minikube service webservice
+  732  ps aux 
+  733  kill 72021 72004
+  734  ps aux 
+  735  kubectl get pods
+  736  kubectl port-forward webservice-849fbbbf68-f7q6z 8080:80 &
+  737  kubectl port-forward database-77d8c4d959-rqbdn 3306:3306 &
+  738  docker ps -a
+  739  docker exec -it 36e7817bb21f bash
+  740  docker ps -a
+  741  docker exec -it 36e7817bb21f bash
+  742  docker ps -a
+  743  docker exec -it e089c6458398 bash
+  744  ps aux
+  745  ps aux | grep kubectl
+  746  kill 72148 72141
+  747   kubectl delete --all pods --namespace=default
+  748  kill 72148 72141
+  749   kubectl delete --all services --namespace=default
+  750   kubectl delete --all deployments --namespace=default
+  751  kubectl create -f database-deployment.yaml,database-service.yaml,webservice-deployment.yaml,webservice-service.yaml
+  752   kubectl delete --all deployments --namespace=default
+  753   kubectl delete --all services --namespace=default
+  754   kubectl delete --all pods --namespace=default
+  755  kubectl create -f database-deployment.yaml,database-service.yaml,webservice-deployment.yaml,webservice-service.yaml
+  756  minikube service webservice
+  757  kubectl get pods
+  758  kubectl port-forward database-77d8c4d959-pk28b 3306:3306 &
+  759  kubectl port-forward webservice-849fbbbf68-vpsn6 8080:80 &
+  760  docker ps -a
+  761  docker exec -it 3701994bae23 bash
+  762  minikube ssh
+  763  ps aux | grep forwar
+  764  ps aux | grep kubectl
+  765  kill 73127 73119
+  766   kubectl delete --all services --namespace=default
+  767   kubectl delete --all deployments --namespace=default
+  768   kubectl delete --all pods --namespace=default
+  769   kubectl delete --all pods --namespace=default
+  770  kubectl create -f database-deployment.yaml,database-service.yaml,webservice-deployment.yaml,webservice-service.yaml
+  771   kubectl delete --all deployments --namespace=default
+  772   kubectl delete --all services --namespace=default
+  773   kubectl delete --all pods --namespace=default
+  774  kubectl create -f database-deployment.yaml,database-service.yaml,webservice-deployment.yaml,webservice-service.yaml
+  775   kubectl delete --all pods --namespace=default
+  776   kubectl delete --all services --namespace=default
+  777   kubectl delete --all deployments --namespace=default
+  778  kubectl create -f database-deployment.yaml,database-service.yaml,webservice-deployment.yaml,webservice-service.yaml
+  779  minikube service webservice
+  780  minikube service list
+  781  kubectl get pods
+  782  kubectl port-fordward webservice-849fbbbf68-rxstz 8080:80 &
+  783  kubectl port-forward webservice-849fbbbf68-rxstz 8080:80 &
+  784  ps aux | grep kubectl
+  785  kill 73964
+  786   kubectl delete --all deployments --namespace=default
+  787   kubectl delete --all services --namespace=default
+  788   kubectl delete --all pods --namespace=default
+  789  kubectl create -f database-deployment.yaml,database-service.yaml,webservice-deployment.yaml,webservice-service.yaml
+  790  minikube service webservice
+  791  minikube service database
+  792  kubectl get pods
+  793  kubectl port-forward webservice-849fbbbf68-rt9b5 8080:80 &
+  794  kubectl port-forward database-77d8c4d959-pk28b 3306:3306 &
+  795  ps 
+  796  ps aux | grep kubectl
+  797  kill 74491
+  798   kubectl delete --all deployments --namespace=default
+  799   kubectl delete --all services --namespace=default
+  800   kubectl delete --all pods --namespace=default
+  801  kubectl create -f database-deployment.yaml,database-service.yaml,webservice-deployment.yaml,webservice-service.yaml
+  802  minikube service webservice
+  803  kubectl get pods
+  804  kubectl port-forward webservice-849fbbbf68-d8sbf 8080:80 &
+  805  docker ps -a
+  806  docker exec -it 7f8a8bfca3b2 bash
+  807  ps aux | grep kubectl
+  808  kill 74781
+  809   kubectl delete --all pods --namespace=default
+  810   kubectl delete --all services --namespace=default
+  811   kubectl delete --all deployments --namespace=default
+  812  kubectl create -f database-deployment.yaml,database-service.yaml,webservice-deployment.yaml,webservice-service.yaml
+  813   kubectl delete --all services --namespace=default
+  814   kubectl delete --all deployments --namespace=default
+  815   kubectl delete --all pods --namespace=default
+  816  kubectl create -f database-deployment.yaml,database-service.yaml,webservice-deployment.yaml,webservice-service.yaml
+  817   kubectl delete --all services --namespace=default
+  818   kubectl delete --all deployments --namespace=default
+  819   kubectl delete --all pods --namespace=default
+  820  kubectl create -f database-deployment.yaml,database-service.yaml,webservice-deployment.yaml,webservice-service.yaml
+  821   kubectl delete --all pods --namespace=default
+  822   kubectl delete --all deployments --namespace=default
+  823   kubectl delete --all services --namespace=default
+  824  kubectl create -f database-deployment.yaml,database-service.yaml,webservice-deployment.yaml,webservice-service.yaml
+  825  minikube service webservice
+  826  kubectl get pods
+  827  kubectl port-forward webservice-866cd45cd-8t94n 8080:80 &
+  828  docker ps -a
+  829  docker exec -it d1b558fb55f6
+  830  docker exec -it d1b558fb55f6 bash
+  831  kubect get pods
+  832  kubectl get pods
+  833  kubectl get services
+  834  docker exec -it d1b558fb55f6 bash
+  835  minikube logs
+  836  kubectl logs
+  837  kubectl get pods
+  838  kubectl logs webservice-866cd45cd-8t94n
+  839  kubectl get pods
+  840  kubectl logs database-7b7fcbd4cb-nht5k
+  841  ll
+  842  ls
+  843  VBoxManage modifyvm "<VM name>" --natdnshostresolver1 on
+  844  VBoxManage modifyvm "<VM name>" --natdnshostresolver1 on
+  845  VBoxManage help
+  846  VBoxManage list
+  847  VBoxManage list vms
+  848  VBoxManage modifyvm "minikube" --natdnshostresolver1 on
+  849  VBoxManage modifyvm minikube --natdnshostresolver1 on
+  850  docker ps -a
+  851  docker images
+  852  docker ps -a
+  853  kubectl get pods
+  854  kubectl port-forward database-7b7fcbd4cb-nht5k 3306:3306 &
+  855  ps aux | grep kubectl
+  856  kill 75789 75070
+  857   kubectl delete --all services --namespace=default
+  858   kubectl delete --all deployments --namespace=default
+  859   kubectl delete --all pods --namespace=default
+  860  minikube delete
+  861  minikube delete
+  862  minikube start
+  863  kubectl create -f database-deployment.yaml,database-service.yaml,webservice-deployment.yaml,webservice-service.yaml
+  864  minikube service list
+  865  minikube service webservice,database
+  866  minikube service webservice database
+  867  minikube service webservice
+  868  minikube service database
+  869   kubectl delete --all pods --namespace=default
+  870   kubectl delete --all deployments --namespace=default
+  871   kubectl delete --all services --namespace=default
+  872  docker images
+  873  docker ps -a
+  874  docker ps
+  875* 
+  876  docker ps -a
+  877  docker images
+  878  docker ps -a
+  879  docker build -f DockerfileMysql -t database .
+  880  docker build -f Dockerfile -t webservice .
+  881  kubectl create -f database-deployment.yaml,database-service.yaml,webservice-deployment.yaml,webservice-service.yaml
+  882  minikube service webservice
+  883  minikube service database
+  884  minikube service list
+  885  kubectl get pods
+  886  kubectl port-forward webservice-866cd45cd-h4ljc 8080:80 &
+  887  kubectl get pods
+  888  docker ps -a
+  889  docker exec -it 83f637dce878 bash
+  890  docker exec -it 83f637dce878 bash
+  891  history >> comandos.txt
