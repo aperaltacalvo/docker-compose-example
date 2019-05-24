@@ -1,5 +1,5 @@
 FROM php:7.1-apache
-COPY /src/docker-php/ /var/www/html/docker-php/
+COPY src/docker-php/ /var/www/html/docker-php/
 RUN docker-php-ext-install mysqli
 ARG ARG_APACHE_LISTEN_PORT=8080
 ENV APACHE_LISTEN_PORT=${ARG_APACHE_LISTEN_PORT}
