@@ -1,0 +1,31 @@
+{
+  "kind":"Service",
+  "apiVersion":"v1",
+  "metadata":{
+    "name":"database",
+    "labels":{
+      "name":"database"
+    }
+  },
+  "spec":{
+    "ports":[
+      {
+        "protocol":"TCP",
+        "port":3306,
+        "targetPort":3306,
+        "nodePort":0
+      }
+    ],
+    "selector":{
+      "name":"database"
+    },
+    "portalIP":"None",
+    "type":"ClusterIP",
+    "sessionAffinity":"None"
+  },
+  "status":{
+    "loadBalancer":{
+
+    }
+  }
+}
